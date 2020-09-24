@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd0" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AMY_FRDServiceInsertBatchRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertBatchRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertBatchRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertBatchResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InsertBatch_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertPackingSlipDataRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertPackingSlipDataRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertPackingSlipDataRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertPackingSlipDataResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertPackingSlipDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InsertPackingSlipData_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventAdjustmentLineRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventAdjustmentLineRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventAdjustmentLineRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventAdjustmentLineResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventAdjustmentLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InventAdjustmentLine_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceDeleteDataRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceDeleteDataRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceDeleteDataRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceDeleteDataResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceDeleteDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_DeleteData_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventAdjustmentHeaderRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventAdjustmentHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventAdjustmentHeaderRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventAdjustmentHeaderResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventAdjustmentHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InventAdjustmentHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventCountingHeaderRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventCountingHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventCountingHeaderRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventCountingHeaderResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventCountingHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InventCountingHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServicePackingSlipRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServicePackingSlipRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServicePackingSlipRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServicePackingSlipResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServicePackingSlipResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_PackingSlip_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceRecieveOrderRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceRecieveOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceRecieveOrderRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceRecieveOrderResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceRecieveOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_RecieveOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventCountingLineRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventCountingLineRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventCountingLineRequest_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q17:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInventCountingLineResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInventCountingLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InventCountingLine_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q18:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertReturnTransferLineRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertReturnTransferLineRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertReturnTransferLineRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertReturnTransferLineResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertReturnTransferLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InsertReturnTransferLine_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q20:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceUpdateOnhandRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceUpdateOnhandRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceUpdateOnhandRequest_Headers">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q21:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceUpdateOnhandResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceUpdateOnhandResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_UpdateOnhand_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q22:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertReturnTransferHeaderRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertReturnTransferHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertReturnTransferHeaderRequest_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q23:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertReturnTransferHeaderResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertReturnTransferHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InsertReturnTransferHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q24:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceRegisterPackingSlipRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceRegisterPackingSlipRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceRegisterPackingSlipRequest_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceRegisterPackingSlipResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceRegisterPackingSlipResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_RegisterPackingSlip_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q26:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceShipOrderRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceShipOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceShipOrderRequest_Headers">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q27:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceShipOrderResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceShipOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_ShipOrder_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q28:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceUpdateInsertBatchRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceUpdateInsertBatchRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceUpdateInsertBatchRequest_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q29:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceUpdateInsertBatchResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceUpdateInsertBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_UpdateInsertBatch_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q30:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertTransferOrderLinesRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertTransferOrderLinesRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertTransferOrderLinesRequest_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertTransferOrderLinesResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertTransferOrderLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InsertTransferOrderLines_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q32:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertTransferHeaderRequest">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertTransferHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertTransferHeaderRequest_Headers">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q33:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDServiceInsertTransferHeaderResponse">
+    <wsdl:part name="parameters" element="tns:AMY_FRDServiceInsertTransferHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AMY_FRDService_InsertTransferHeader_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q34:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="AMY_FRDService">
+    <wsdl:operation name="InsertBatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InsertBatch" name="AMY_FRDServiceInsertBatchRequest" message="tns:AMY_FRDServiceInsertBatchRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InsertBatchResponse" name="AMY_FRDServiceInsertBatchResponse" message="tns:AMY_FRDServiceInsertBatchResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InsertBatchAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InsertBatch_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPackingSlipData">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InsertPackingSlipData" name="AMY_FRDServiceInsertPackingSlipDataRequest" message="tns:AMY_FRDServiceInsertPackingSlipDataRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InsertPackingSlipDataResponse" name="AMY_FRDServiceInsertPackingSlipDataResponse" message="tns:AMY_FRDServiceInsertPackingSlipDataResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InsertPackingSlipDataAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InsertPackingSlipData_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InventAdjustmentLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InventAdjustmentLine" name="AMY_FRDServiceInventAdjustmentLineRequest" message="tns:AMY_FRDServiceInventAdjustmentLineRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InventAdjustmentLineResponse" name="AMY_FRDServiceInventAdjustmentLineResponse" message="tns:AMY_FRDServiceInventAdjustmentLineResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InventAdjustmentLineAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InventAdjustmentLine_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteData">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/DeleteData" name="AMY_FRDServiceDeleteDataRequest" message="tns:AMY_FRDServiceDeleteDataRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/DeleteDataResponse" name="AMY_FRDServiceDeleteDataResponse" message="tns:AMY_FRDServiceDeleteDataResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/DeleteDataAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_DeleteData_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InventAdjustmentHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InventAdjustmentHeader" name="AMY_FRDServiceInventAdjustmentHeaderRequest" message="tns:AMY_FRDServiceInventAdjustmentHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InventAdjustmentHeaderResponse" name="AMY_FRDServiceInventAdjustmentHeaderResponse" message="tns:AMY_FRDServiceInventAdjustmentHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InventAdjustmentHeaderAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InventAdjustmentHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InventCountingHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InventCountingHeader" name="AMY_FRDServiceInventCountingHeaderRequest" message="tns:AMY_FRDServiceInventCountingHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InventCountingHeaderResponse" name="AMY_FRDServiceInventCountingHeaderResponse" message="tns:AMY_FRDServiceInventCountingHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InventCountingHeaderAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InventCountingHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PackingSlip">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/PackingSlip" name="AMY_FRDServicePackingSlipRequest" message="tns:AMY_FRDServicePackingSlipRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/PackingSlipResponse" name="AMY_FRDServicePackingSlipResponse" message="tns:AMY_FRDServicePackingSlipResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/PackingSlipAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_PackingSlip_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecieveOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/RecieveOrder" name="AMY_FRDServiceRecieveOrderRequest" message="tns:AMY_FRDServiceRecieveOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/RecieveOrderResponse" name="AMY_FRDServiceRecieveOrderResponse" message="tns:AMY_FRDServiceRecieveOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/RecieveOrderAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_RecieveOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InventCountingLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InventCountingLine" name="AMY_FRDServiceInventCountingLineRequest" message="tns:AMY_FRDServiceInventCountingLineRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InventCountingLineResponse" name="AMY_FRDServiceInventCountingLineResponse" message="tns:AMY_FRDServiceInventCountingLineResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InventCountingLineAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InventCountingLine_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertReturnTransferLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InsertReturnTransferLine" name="AMY_FRDServiceInsertReturnTransferLineRequest" message="tns:AMY_FRDServiceInsertReturnTransferLineRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InsertReturnTransferLineResponse" name="AMY_FRDServiceInsertReturnTransferLineResponse" message="tns:AMY_FRDServiceInsertReturnTransferLineResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InsertReturnTransferLineAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InsertReturnTransferLine_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOnhand">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/UpdateOnhand" name="AMY_FRDServiceUpdateOnhandRequest" message="tns:AMY_FRDServiceUpdateOnhandRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/UpdateOnhandResponse" name="AMY_FRDServiceUpdateOnhandResponse" message="tns:AMY_FRDServiceUpdateOnhandResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/UpdateOnhandAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_UpdateOnhand_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertReturnTransferHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InsertReturnTransferHeader" name="AMY_FRDServiceInsertReturnTransferHeaderRequest" message="tns:AMY_FRDServiceInsertReturnTransferHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InsertReturnTransferHeaderResponse" name="AMY_FRDServiceInsertReturnTransferHeaderResponse" message="tns:AMY_FRDServiceInsertReturnTransferHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InsertReturnTransferHeaderAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InsertReturnTransferHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterPackingSlip">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/RegisterPackingSlip" name="AMY_FRDServiceRegisterPackingSlipRequest" message="tns:AMY_FRDServiceRegisterPackingSlipRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/RegisterPackingSlipResponse" name="AMY_FRDServiceRegisterPackingSlipResponse" message="tns:AMY_FRDServiceRegisterPackingSlipResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/RegisterPackingSlipAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_RegisterPackingSlip_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShipOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/ShipOrder" name="AMY_FRDServiceShipOrderRequest" message="tns:AMY_FRDServiceShipOrderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/ShipOrderResponse" name="AMY_FRDServiceShipOrderResponse" message="tns:AMY_FRDServiceShipOrderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/ShipOrderAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_ShipOrder_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsertBatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/UpdateInsertBatch" name="AMY_FRDServiceUpdateInsertBatchRequest" message="tns:AMY_FRDServiceUpdateInsertBatchRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/UpdateInsertBatchResponse" name="AMY_FRDServiceUpdateInsertBatchResponse" message="tns:AMY_FRDServiceUpdateInsertBatchResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/UpdateInsertBatchAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_UpdateInsertBatch_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransferOrderLines">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InsertTransferOrderLines" name="AMY_FRDServiceInsertTransferOrderLinesRequest" message="tns:AMY_FRDServiceInsertTransferOrderLinesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InsertTransferOrderLinesResponse" name="AMY_FRDServiceInsertTransferOrderLinesResponse" message="tns:AMY_FRDServiceInsertTransferOrderLinesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InsertTransferOrderLinesAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InsertTransferOrderLines_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransferHeader">
+      <wsdl:input wsaw:Action="http://tempuri.org/AMY_FRDService/InsertTransferHeader" name="AMY_FRDServiceInsertTransferHeaderRequest" message="tns:AMY_FRDServiceInsertTransferHeaderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/AMY_FRDService/InsertTransferHeaderResponse" name="AMY_FRDServiceInsertTransferHeaderResponse" message="tns:AMY_FRDServiceInsertTransferHeaderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/AMY_FRDService/InsertTransferHeaderAifFaultFault" name="AifFaultFault" message="tns:AMY_FRDService_InsertTransferHeader_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

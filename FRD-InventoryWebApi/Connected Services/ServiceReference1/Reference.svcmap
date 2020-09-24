@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14e85b78-4740-4e61-b1dd-2af98622617f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://PREVAX:8101/DynamicsAx/Services/AMY_FRDServiceGroup" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AMY_FRDServiceGroup6.xsd" MetadataType="Schema" ID="e68cf15a-ca6b-4445-ade5-ea40cf675442" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd2" />
+    <MetadataFile FileName="AMY_FRDServiceGroup2.wsdl" MetadataType="Wsdl" ID="244909d4-b9e6-4fc4-934e-2e59aec68ed9" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup" />
+    <MetadataFile FileName="AMY_FRDServiceGroup61.xsd" MetadataType="Schema" ID="e507aa3b-49f8-4ea3-b1d4-02bcba69d853" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd1" />
+    <MetadataFile FileName="AMY_FRDServiceGroup62.xsd" MetadataType="Schema" ID="f575a5ba-ef9b-487c-b0d3-6290f8bbe29e" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd0" />
+    <MetadataFile FileName="AMY_FRDServiceGroup63.xsd" MetadataType="Schema" ID="b8577ad1-6b83-4808-85bf-c6e15f47a41e" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd4" />
+    <MetadataFile FileName="AMY_FRDServiceGroup64.xsd" MetadataType="Schema" ID="6e47d731-f442-450c-8a60-022cddc37085" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd3" />
+    <MetadataFile FileName="AMY_FRDServiceGroup65.xsd" MetadataType="Schema" ID="88a9c7ca-f7e6-4f79-900f-5860f44334fb" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?xsd=xsd5" />
+    <MetadataFile FileName="AMY_FRDServiceGroup21.wsdl" MetadataType="Wsdl" ID="6f26c8b9-3e8e-4f0a-a6cd-1b319a164eb6" SourceId="1" SourceUrl="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

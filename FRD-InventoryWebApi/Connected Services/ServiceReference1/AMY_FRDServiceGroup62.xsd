@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AMY_FRDServiceInsertBatchRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_BatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Itemid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Expdate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_BatchType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertBatchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertPackingSlipDataRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PurchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Qty" type="xs:decimal" />
+        <xs:element minOccurs="0" name="MRNNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_LineNumber" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertPackingSlipDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventAdjustmentLineRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_InventJournalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ItemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_EcoResItemConfigurationName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventBatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Qty" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_TransDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventAdjustmentLineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceDeleteDataRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceDeleteDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventAdjustmentHeaderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_WebUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventAdjustmentHeaderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventCountingHeaderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_WebUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventCountingHeaderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServicePackingSlipRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Purchid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServicePackingSlipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceRecieveOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_TransferId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceRecieveOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventCountingLineRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_InventJournalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ItemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Count" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_EcoResItemConfigurationName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventBatchId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInventCountingLineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertReturnTransferLineRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_TransferId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ItemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_EcoResItemConfigurationName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventBatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Qty" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertReturnTransferLineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceUpdateOnhandRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_EcoResItemConfigurationName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceUpdateOnhandResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertReturnTransferHeaderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_RequestId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_TransferId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_WebUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertReturnTransferHeaderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceRegisterPackingSlipRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Purchid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Itemid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_line" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_Batchid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_qty" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceRegisterPackingSlipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceShipOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_TransferId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceShipOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceUpdateInsertBatchRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_BatchId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Itemid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Expdate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_BatchType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceUpdateInsertBatchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertTransferOrderLinesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_TransferId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ItemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Qty" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_EcoResItemConfigurationName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_inventBatchId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertTransferOrderLinesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertTransferHeaderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_RequestId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_fromLocation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ToLocation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_WebUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AMY_FRDServiceInsertTransferHeaderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

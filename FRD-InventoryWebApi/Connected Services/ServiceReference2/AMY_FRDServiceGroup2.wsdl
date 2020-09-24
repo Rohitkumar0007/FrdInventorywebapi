@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AMY_FRDServiceGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_AMY_FRDService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="http://prevax:8101/DynamicsAx/Services/AMY_FRDServiceGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="NetTcpBinding_AMY_FRDService" type="i0:AMY_FRDService">
+    <wsp:PolicyReference URI="#NetTcpBinding_AMY_FRDService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="InsertBatch">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InsertBatch" style="document" />
+      <wsdl:input name="AMY_FRDServiceInsertBatchRequest">
+        <soap12:header message="i0:AMY_FRDServiceInsertBatchRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInsertBatchResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPackingSlipData">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InsertPackingSlipData" style="document" />
+      <wsdl:input name="AMY_FRDServiceInsertPackingSlipDataRequest">
+        <soap12:header message="i0:AMY_FRDServiceInsertPackingSlipDataRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInsertPackingSlipDataResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InventAdjustmentLine">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InventAdjustmentLine" style="document" />
+      <wsdl:input name="AMY_FRDServiceInventAdjustmentLineRequest">
+        <soap12:header message="i0:AMY_FRDServiceInventAdjustmentLineRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInventAdjustmentLineResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteData">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/DeleteData" style="document" />
+      <wsdl:input name="AMY_FRDServiceDeleteDataRequest">
+        <soap12:header message="i0:AMY_FRDServiceDeleteDataRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceDeleteDataResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InventAdjustmentHeader">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InventAdjustmentHeader" style="document" />
+      <wsdl:input name="AMY_FRDServiceInventAdjustmentHeaderRequest">
+        <soap12:header message="i0:AMY_FRDServiceInventAdjustmentHeaderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInventAdjustmentHeaderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InventCountingHeader">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InventCountingHeader" style="document" />
+      <wsdl:input name="AMY_FRDServiceInventCountingHeaderRequest">
+        <soap12:header message="i0:AMY_FRDServiceInventCountingHeaderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInventCountingHeaderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PackingSlip">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/PackingSlip" style="document" />
+      <wsdl:input name="AMY_FRDServicePackingSlipRequest">
+        <soap12:header message="i0:AMY_FRDServicePackingSlipRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServicePackingSlipResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RecieveOrder">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/RecieveOrder" style="document" />
+      <wsdl:input name="AMY_FRDServiceRecieveOrderRequest">
+        <soap12:header message="i0:AMY_FRDServiceRecieveOrderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceRecieveOrderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InventCountingLine">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InventCountingLine" style="document" />
+      <wsdl:input name="AMY_FRDServiceInventCountingLineRequest">
+        <soap12:header message="i0:AMY_FRDServiceInventCountingLineRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInventCountingLineResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertReturnTransferLine">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InsertReturnTransferLine" style="document" />
+      <wsdl:input name="AMY_FRDServiceInsertReturnTransferLineRequest">
+        <soap12:header message="i0:AMY_FRDServiceInsertReturnTransferLineRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInsertReturnTransferLineResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOnhand">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/UpdateOnhand" style="document" />
+      <wsdl:input name="AMY_FRDServiceUpdateOnhandRequest">
+        <soap12:header message="i0:AMY_FRDServiceUpdateOnhandRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceUpdateOnhandResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertReturnTransferHeader">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InsertReturnTransferHeader" style="document" />
+      <wsdl:input name="AMY_FRDServiceInsertReturnTransferHeaderRequest">
+        <soap12:header message="i0:AMY_FRDServiceInsertReturnTransferHeaderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInsertReturnTransferHeaderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterPackingSlip">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/RegisterPackingSlip" style="document" />
+      <wsdl:input name="AMY_FRDServiceRegisterPackingSlipRequest">
+        <soap12:header message="i0:AMY_FRDServiceRegisterPackingSlipRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceRegisterPackingSlipResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ShipOrder">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/ShipOrder" style="document" />
+      <wsdl:input name="AMY_FRDServiceShipOrderRequest">
+        <soap12:header message="i0:AMY_FRDServiceShipOrderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceShipOrderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsertBatch">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/UpdateInsertBatch" style="document" />
+      <wsdl:input name="AMY_FRDServiceUpdateInsertBatchRequest">
+        <soap12:header message="i0:AMY_FRDServiceUpdateInsertBatchRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceUpdateInsertBatchResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransferOrderLines">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InsertTransferOrderLines" style="document" />
+      <wsdl:input name="AMY_FRDServiceInsertTransferOrderLinesRequest">
+        <soap12:header message="i0:AMY_FRDServiceInsertTransferOrderLinesRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInsertTransferOrderLinesResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransferHeader">
+      <soap12:operation soapAction="http://tempuri.org/AMY_FRDService/InsertTransferHeader" style="document" />
+      <wsdl:input name="AMY_FRDServiceInsertTransferHeaderRequest">
+        <soap12:header message="i0:AMY_FRDServiceInsertTransferHeaderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AMY_FRDServiceInsertTransferHeaderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AMY_FRDServiceGroup">
+    <wsdl:port name="NetTcpBinding_AMY_FRDService" binding="tns:NetTcpBinding_AMY_FRDService">
+      <soap12:address location="net.tcp://prevax:8201/DynamicsAx/Services/AMY_FRDServiceGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://prevax:8201/DynamicsAx/Services/AMY_FRDServiceGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@PrevLive.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -183,6 +183,9 @@
     <Compile Include="Controllers\ItemReceivingController.cs" />
     <Compile Include="Controllers\MRNDetailsController.cs" />
     <Compile Include="Controllers\RequestControlController.cs" />
+    <Compile Include="Controllers\ScheduleActivityController.cs" />
+    <Compile Include="Controllers\SchedulePauseSubmitActivityController.cs" />
+    <Compile Include="Controllers\ScheduleScanActivityController.cs" />
     <Compile Include="Controllers\UserLoginController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
